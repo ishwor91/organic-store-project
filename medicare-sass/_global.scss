@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    font-family: 'inter' ,sans-serif;
+}
+.section{
+    padding: 96px 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 150px;
+}
+.para{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: $primary-grey;
+}
+.stacked {
+    display: grid;
+}
+
+.hero-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 4.68rem;
+    color: $heading-color;
+    margin: 16px 0;
+}
+@mixin column-l{
+    grid-template-columns: repeat(3,1fr);
+}
+@mixin grid-m {
+    grid-template-columns: repeat(2,1fr)
+    
+}
+
+.heading-title {
+    text-align: center;
+    font-size: $header3-font;
+    font-weight: 600;
+    line-height: 3.43rem;
+    color: $heading-color;
+    margin: 16px 0;
+}
+
+
+
+ 
+
+a {
+    text-decoration: none;
+
+}
+
+.click {
+    background-color:rgba(236, 142, 0, 1);
+    font-size: 22px;
+    padding: 16px 35px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 32px;
+    margin:48px 0;
+    text-align: center;
+    img{
+        max-width: 24px;
+        margin-left: 10px;
+        height: 13px;
+    }
+    
+}
+
+@mixin sm-btn {
+    background-color: rgba(189, 242, 227, 1);
+    padding: 10px 24px;
+    border-radius: 20px;
+    color: rgba(4, 125, 55, 1);
+    font-weight: 600;
+
+
+}
+
+
+@mixin flex($justify , $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,359 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 150px;
+}
+
+.para {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #676A8A;
+}
+
+.stacked {
+  display: grid;
+}
+
+.hero-title {
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 4.68rem;
+  color: rgb(11, 26, 71);
+  margin: 16px 0;
+}
+
+.heading-title {
+  text-align: center;
+  font-size: 2.815rem;
+  font-weight: 600;
+  line-height: 3.43rem;
+  color: rgb(11, 26, 71);
+  margin: 16px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.click {
+  background-color: rgb(236, 142, 0);
+  font-size: 22px;
+  padding: 16px 35px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 32px;
+  margin: 48px 0;
+  text-align: center;
+}
+.click img {
+  max-width: 24px;
+  margin-left: 10px;
+  height: 13px;
+}
+
+.top-nav {
+  background: #F7FBFF;
+}
+.top-nav .header-social {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1rem;
+  color: #676A8A;
+}
+.top-nav .header-social-left, .top-nav .header-social-right {
+  display: flex;
+  gap: 20px;
+}
+.top-nav .header-social-left span, .top-nav .header-social-right span {
+  display: flex;
+  gap: 10px;
+}
+
+.sm-btn {
+  background-color: rgb(189, 242, 227);
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: rgb(4, 125, 55);
+  font-weight: 600;
+  display: table;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header-logo {
+  height: 53px;
+  width: 225px;
+}
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header-links a {
+  font-size: 1.125rem;
+  line-height: 34px;
+  color: #676A8A;
+}
+.header-links .click {
+  padding: 16px 24px;
+  margin: 0;
+  color: white;
+}
+.header-links .click img {
+  height: auto;
+}
+.header .active {
+  color: rgb(11, 26, 71);
+}
+
+.hero-section {
+  padding-top: 48px;
+}
+
+.hero {
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  -moz-column-gap: 84px;
+       column-gap: 84px;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hero-text img {
+  width: 48px;
+}
+.hero-text .sm-btn {
+  background-color: rgb(189, 242, 227);
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: rgb(4, 125, 55);
+  font-weight: 600;
+}
+.hero-image {
+  position: relative;
+}
+.hero-image::before {
+  content: "";
+  height: 65px;
+  width: 65px;
+  background: linear-gradient(149.21deg, #FFFFFF 12.75%, #D0DCFF 86.99%);
+  position: absolute;
+  border-radius: 50%;
+  top: 0px;
+  left: 0;
+}
+.hero-image::after {
+  content: "";
+  height: 65px;
+  width: 65px;
+  background: linear-gradient(149.21deg, #FFFFFF 12.75%, #D0DCFF 86.99%);
+  position: absolute;
+  border-radius: 50%;
+  bottom: -21px;
+  right: 0px;
+}
+
+.cards {
+  grid-template-columns: repeat(3, 1fr);
+  background: linear-gradient(180deg, #89A7FF 0%, #476FE4 100%);
+  justify-items: center;
+  height: 355px;
+  border-radius: 5px;
+}
+.cards-card {
+  color: #F7FBFF;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-items: center;
+  align-items: baseline;
+}
+.cards-card img {
+  width: 27px;
+  height: 27px;
+}
+.cards-medium {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 35px;
+}
+.cards-small {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(255, 255, 255);
+  padding: 12px 0 24px 0;
+}
+.cards-btn {
+  margin: 0;
+  background: none;
+  border: 1px solid white;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 21.78px;
+}
+.cards-btn img {
+  width: 24px;
+  height: 13px;
+}
+.cards .day {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards .day-1 {
+  border-bottom: 1px solid white;
+}
+
+.about {
+  background-color: #F7FBFF;
+}
+
+.aboutus {
+  grid-template-columns: repeat(2, 1fr);
+}
+.aboutus-image {
+  position: relative;
+}
+.aboutus-image-1 {
+  position: relative;
+}
+.aboutus-image-2 {
+  position: absolute;
+  bottom: -35px;
+  right: 244px;
+}
+.aboutus-image-3 {
+  position: absolute;
+  left: -64px;
+  top: 161px;
+}
+.aboutus-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aboutus-text .sm-btn {
+  background-color: rgb(189, 242, 227);
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: rgb(4, 125, 55);
+  font-weight: 600;
+}
+.aboutus-text-medium {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  color: 3.75rem;
+  line-height: 40px;
+}
+.aboutus-text .care-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 8px;
+  -moz-column-gap: 56px;
+       column-gap: 56px;
+  margin-top: 14px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.aboutus-text .care-card i {
+  color: rgb(14, 182, 84);
+}
+
+.our-services {
+  justify-items: center;
+}
+.our-services .btn,
+.our-services p {
+  text-align: center;
+}
+.our-services-cards {
+  margin-top: 52px;
+  display: grid;
+  grid-gap: 30px 48px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.our-services-cards .card {
+  border-radius: 20px;
+  background: #F7FBFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  height: 350px;
+}
+.our-services-cards .card-small {
+  font-size: 1.125rem;
+  color: #676A8A;
+  font-weight: 400;
+  line-height: 34px;
+  padding: 0 29px;
+}
+.our-services-cards .fa-solid {
+  border-radius: 20px 20px 0 0;
+  padding: 45px 161px;
+  background: linear-gradient(180deg, #89A7FF 0%, #476FE4 100%);
+  width: 100%;
+  height: 128px;
+  font-size: 38px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.our-services .click {
+  margin: 0;
+  background: none;
+  color: #EC8E00;
+  font-size: 1rem;
+  padding: 0 0 0 24px;
+}
+.our-services .card-medium-3 {
+  font-size: 1.5rem;
+  color: rgb(11, 26, 71);
+  padding: 16px 0 11px 0;
+  font-weight: 700;
+}
+
+.click {
+  text-align: center;
+  grid-column: 1 span 2;
+}
+
+.appointments-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appointments-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}/*# sourceMappingURL=medicare.css.map */
